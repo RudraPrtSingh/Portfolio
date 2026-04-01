@@ -1,0 +1,255 @@
+/*GLOBAL*/
+body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    background: #f9f9f9;
+    color: #111;
+}
+
+.app {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px;
+}
+
+/* HERO*/
+.hero {
+    text-align: center;
+    padding: 140px 20px;
+}
+
+.hero-title {
+    font-size: 80px;
+    font-weight: 900;
+    letter-spacing: -2px;
+}
+
+.nav-links {
+    margin: 30px 0;
+    font-size: 18px;
+    color: #777;
+}
+
+.nav-links button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.hero-subtitle {
+    font-size: 28px;
+    color: #888;
+}
+
+.hero-text {
+    font-size: 20px;
+    max-width: 700px;
+    margin: 20px auto;
+    color: #666;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.btn-primary {
+    background: black;
+    color: white;
+    padding: 18px 36px;
+    border-radius: 40px;
+    border: none;
+    font-size: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+}
+
+.btn-secondary {
+    background: #eee;
+    padding: 18px 36px;
+    border-radius: 40px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/*PROJECTS */
+.projects {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: 800;
+}
+
+/* CLICKABLE CARD */
+.project-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    border-radius: 16px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.project-card:hover {
+    background: #eee;
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.project-card h3 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.project-card p {
+    font-size: 18px;
+    color: #777;
+    margin-top: 5px;
+}
+
+.arrow {
+    display: none;
+}
+
+/*CONTACT*/
+.contact {
+    display: flex;
+    gap: 80px;
+    padding: 100px 0;
+}
+
+.contact-left h1 {
+    font-size: 56px;
+}
+
+.contact-left span {
+    font-style: italic;
+}
+
+.contact-left p {
+    color: #666;
+    margin-top: 15px;
+}
+
+.contact-info {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* FORM */
+.contact-form {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    flex: 1;
+}
+
+.contact-form h3 {
+    font-size: 26px;
+}
+
+.contact-form p {
+    color: #777;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 16px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+textarea {
+    height: 140px;
+}
+
+/*FOOTER*/
+.contact-footer {
+    padding: 100px 20px;
+    border-top: 1px solid #eee;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+/* LEFT */
+.footer-left h2 {
+    font-size: 36px;
+}
+
+/* RIGHT */
+.footer-right {
+    display: flex;
+    gap: 25px;
+    font-size: 18px;
+}
+
+.footer-right a {
+    text-decoration: none;
+    color: #555;
+    transition: 0.3s;
+}
+
+.footer-right a:hover {
+    color: black;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 50px;
+    }
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+}
+
+/*SUCCESS MESSAGE*/
+.success-msg {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    color: #16a34a;
+    padding: 16px 20px;
+    border-radius: 12px;
+    font-size: 18px;
+    margin-top: 15px;
+}
