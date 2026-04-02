@@ -1,4 +1,4 @@
-/*GLOBAL*/
+/* GLOBAL */
 body {
     margin: 0;
     font-family: Inter, sans-serif;
@@ -9,10 +9,10 @@ body {
 .app {
     max-width: 1200px;
     margin: auto;
-    padding: 30px;
+    padding: 30px 30px 0 30px;
 }
 
-/* HERO*/
+/* HERO */
 .hero {
     text-align: center;
     padding: 140px 20px;
@@ -79,7 +79,7 @@ body {
     cursor: pointer;
 }
 
-/*PROJECTS */
+/* PROJECTS */
 .projects {
     padding: 80px 0;
 }
@@ -123,7 +123,7 @@ body {
     display: none;
 }
 
-/*CONTACT*/
+/* CONTACT */
 .contact {
     display: flex;
     gap: 80px;
@@ -183,44 +183,51 @@ textarea {
     height: 140px;
 }
 
-/*FOOTER*/
+/* FOOTER */
 .contact-footer {
-    padding: 100px 20px;
-    border-top: 1px solid #eee;
+    background: #0f0f0f;
+    padding: 64px 0;
+    margin: 0 -30px;
+    box-shadow: 0 0 0 100vmax #0f0f0f;
+    clip-path: inset(0 -100vmax);
 }
 
-.footer-container {
-    max-width: 1100px;
-    margin: auto;
+.footer-tagline {
+    font-size: 28px;
+    font-weight: 500;
+    color: #ffffff;
+    margin: 0 0 12px 30px;
+    letter-spacing: -0.3px;
+}
+
+.footer-socials {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
+    gap: 28px;
+    margin-bottom: 32px;
+    padding-left: 30px;
 }
 
-/* LEFT */
-.footer-left h2 {
-    font-size: 36px;
-}
-
-/* RIGHT */
-.footer-right {
-    display: flex;
-    gap: 25px;
-    font-size: 18px;
-}
-
-.footer-right a {
+.footer-socials a {
+    font-size: 22px;
+    color: #ffffff;
     text-decoration: none;
-    color: #555;
-    transition: 0.3s;
+    font-weight: 400;
+    transition: color 0.2s;
 }
 
-.footer-right a:hover {
-    color: black;
+.footer-socials a:hover {
+    color: #e8956d;
 }
 
-/*RESPONSIVE*/
+.footer-line {
+    width: calc(100% + 60px);
+    margin-left: 30px;
+    height: 1px;
+    background: linear-gradient(to right, #f8f8f8, #7b7370, transparent);
+    border: none;
+}
+
+/* RESPONSIVE */
 @media (max-width: 768px) {
     .hero-title {
         font-size: 50px;
@@ -230,17 +237,12 @@ textarea {
         flex-direction: column;
     }
 
-    .footer-container {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
     .form-row {
         flex-direction: column;
     }
 }
 
-/*SUCCESS MESSAGE*/
+/* SUCCESS MESSAGE */
 .success-msg {
     display: flex;
     align-items: center;

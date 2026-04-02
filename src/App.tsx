@@ -16,16 +16,11 @@ const App: React.FC = () => {
 
   const handleSubmit = async () => {
     if (!formData.name || !formData.email || !formData.message) return;
-
     setSending(true);
-
-    // Simulate sending — replace with EmailJS or backend later
     await new Promise((res) => setTimeout(res, 1500));
-
     setSending(false);
     setSent(true);
     setFormData({ name: "", email: "", message: "" });
-
     setTimeout(() => setSent(false), 4000);
   };
 
@@ -48,16 +43,13 @@ const App: React.FC = () => {
       {/* HERO */}
       <section className="hero fade-in">
         <h1 className="hero-title">Hi, I'm Rudra Pratap Singh</h1>
-
         <h2 className="hero-subtitle">
           Learning Full Stack Development, Passionate about Building Things
         </h2>
-
         <p className="hero-text">
           Right now I'm diving into Node.js on the backend — learning how servers work and trying to implement whatever
           I learn through small projects. I'm at the start of my journey but I show up every day and keep building.
         </p>
-
         <div className="hero-buttons">
           <button className="btn-primary" onClick={() => scrollTo("projects")}>
             View My Work →
@@ -73,7 +65,6 @@ const App: React.FC = () => {
         <h2 className="section-title">
           My Projects <span>{"-"}</span>
         </h2>
-
         {projects.map((p, i) => (
           <a
             key={i}
@@ -98,12 +89,10 @@ const App: React.FC = () => {
             Let's build something <br />
             <span>together.</span>
           </h1>
-
           <p>
             Currently leveling up in Full Stack Development.<br />
             Front-end is my starting point, and I'm learning more every day.
           </p>
-
           <div className="contact-info">
             <div>📧 9omsingh22@gmail.com</div>
             <div>📍 IN, Asia</div>
@@ -148,19 +137,17 @@ const App: React.FC = () => {
             </button>
           )}
         </div>*/}
+
       </section>
 
       {/* FOOTER */}
       <footer className="contact-footer">
-        <div className="footer-container">
-          <div className="footer-left">
-            <h2>Online Presence</h2>
-          </div>
-          <div className="footer-right">
-            <a href="https://x.com/Rudraprtsingh" target="_blank" rel="noopener noreferrer">X</a>
-            <a href="https://github.com/RudraPrtSingh" target="_blank" rel="noopener noreferrer">Github</a>
-          </div>
+        <p className="footer-tagline">Let's get to know each other</p>
+        <div className="footer-socials">
+          <a href="https://x.com/Rudraprtsingh" target="_blank" rel="noopener noreferrer">X</a>
+          <a href="https://github.com/RudraPrtSingh" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
+        <hr className="footer-line" />
       </footer>
 
     </div>
